@@ -1,13 +1,11 @@
 //
-//  Queue.hpp
+//  Header.h
 //  Lab: Gumball Guess 7.4
 //
 //  Created by Coleton Watt on 3/2/22.
 //
-/*
-#ifndef Queue_hpp
-#define Queue_hpp
 
+#pragma once
 #include <memory>
 #include <sstream>
 #include <string>
@@ -52,7 +50,7 @@ protected:
     //Node<Type> *back;
     shared_ptr <Node<Type> > front;
     shared_ptr <Node<Type> > back;
-    int count;//Number of nodes in list
+    int count = 0;
 };
 
 template<class Type>
@@ -129,8 +127,9 @@ void Queue<Type>::clear(){
     auto toDelete = front;
     front = nullptr;
     //delete toDelete;
+    count = 0;
     return;
-    count --;
+ 
     
 }
 
@@ -154,5 +153,3 @@ ostream& operator<< (ostream& out, const Queue<Type>& list){
 }
 
 
-#endif  Queue_hpp 
-*/

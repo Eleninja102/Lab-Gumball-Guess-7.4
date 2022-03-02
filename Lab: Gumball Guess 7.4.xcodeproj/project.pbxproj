@@ -31,6 +31,8 @@
 		1D3F830327D0018000DB959A /* CandyGuessTester.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CandyGuessTester.cpp; sourceTree = "<group>"; };
 		1D3F830527D0019700DB959A /* Queue.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Queue.cpp; sourceTree = "<group>"; };
 		1D3F830627D0019700DB959A /* Queue.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Queue.hpp; sourceTree = "<group>"; };
+		1D3F830827D0031D00DB959A /* LinkedList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LinkedList.h; sourceTree = "<group>"; };
+		1D3F830927D030A600DB959A /* Queue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Queue.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,8 @@
 				1D3F830327D0018000DB959A /* CandyGuessTester.cpp */,
 				1D3F830527D0019700DB959A /* Queue.cpp */,
 				1D3F830627D0019700DB959A /* Queue.hpp */,
+				1D3F830927D030A600DB959A /* Queue.h */,
+				1D3F830827D0031D00DB959A /* LinkedList.h */,
 			);
 			path = "Lab: Gumball Guess 7.4";
 			sourceTree = "<group>";

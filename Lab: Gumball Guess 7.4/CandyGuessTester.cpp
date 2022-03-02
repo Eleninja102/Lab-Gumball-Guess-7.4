@@ -2,7 +2,7 @@
 #include <cmath>
 #include <sstream>
 #include <memory>
-#include "Queue.hpp"
+#include "Queue.h"
 #include "Person.h"
 
 using namespace std;
@@ -27,6 +27,27 @@ int main() {
 ********** TODO ********** TODO ********** TODO ********** TODO ********** TODO*/
 Queue<Person>findWinners(int numberOfCandies, Queue<Person>guessList) {
 	Queue<Person>winners;
+    int z;
+    int y = 320000000;
+    while(!guessList.isEmpty()){
+        Person x = guessList.peek();
+        z = abs(numberOfCandies - x.getAmount());
+        //cout << z;
+        if(y > z){
+            y = z;
+            if(!winners.isEmpty()){
+                winners.clear();
+            }
+            winners.enqueue(x);
+        }else if(y == z){
+            winners.enqueue(x);
+        }
+        guessList.dequeue();
+        
+    }
+    
+    
+    
 
 
 
